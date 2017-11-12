@@ -1,13 +1,28 @@
 <TaskerData sr="" dvi="1" tv="4.7u3m">
 	<Task sr="task14">
 		<cdate>1465039392188</cdate>
-		<edate>1466536039930</edate>
+		<edate>1510482244010</edate>
 		<id>14</id>
 		<nme>OnWhatsApp</nme>
 		<pri>100</pri>
 		<rty>2</rty>
 		<stayawake>true</stayawake>
 		<Action sr="act0" ve="7">
+			<code>597</code>
+			<Str sr="arg0" ve="3">%wt_senderid</Str>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg2" val="10"/>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">%got_number</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%wt_senderid</lhs>
+					<op>4</op>
+					<rhs>(.*)s.whatsapp.net</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
 			<code>37</code>
 			<ConditionList sr="if">
 				<bool0>Or</bool0>
@@ -17,32 +32,28 @@
 					<rhs>@g.us</rhs>
 				</Condition>
 				<Condition sr="c1" ve="3">
-					<lhs>%wt_senderid</lhs>
+					<lhs>%IDignore</lhs>
 					<op>4</op>
-					<rhs>%IDignore</rhs>
+					<rhs>%got_number</rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act1" ve="7">
-			<code>43</code>
-		</Action>
-		<Action sr="act2" ve="7">
+		<Action sr="act10" ve="7">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%contact</Str>
-			<Str sr="arg1" ve="3">%wt_senderid</Str>
+			<Str sr="arg0" ve="3">%message</Str>
+			<Str sr="arg1" ve="3">My master is Sir. Abdul Noushad Sheikh. The mad genius with a complex mind.</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 		</Action>
-		<Action sr="act3" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">Chat Bot</Str>
-			<Int sr="arg1" val="20"/>
-			<Str sr="arg2" ve="3">%wt_message</Str>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3">%message</Str>
-			<Int sr="arg5" val="0"/>
+		<Action sr="act11" ve="7">
+			<code>38</code>
 		</Action>
-		<Action sr="act4" ve="7">
+		<Action sr="act12" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%message</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act13" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%totalmessage</Str>
 			<Str sr="arg1" ve="3">BrainBot : 
@@ -50,7 +61,7 @@
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 		</Action>
-		<Action sr="act5" ve="7">
+		<Action sr="act14" ve="7">
 			<code>27269</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -74,9 +85,74 @@ Message: %totalmessage</com.twofortyfouram.locale.intent.extra.BLURB>
 			<Str sr="arg1" ve="3">net.zhdev.whatstasker</Str>
 			<Str sr="arg2" ve="3">WhatsTasker Send Message</Str>
 			<Int sr="arg3" val="4"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%message</lhs>
+					<op>5</op>
+					<rhs>[%@]message</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%contact</Str>
+			<Str sr="arg1" ve="3">%wt_senderid</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%wt_message</lhs>
+					<op>4</op>
+					<rhs>[Aa]bdul|[Ss]heikh</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%message</Str>
+			<Str sr="arg1" ve="3">Sir. Abdul Noushad is a great person and my master. The mad genius with a funny Brain. 😉</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
 		</Action>
 		<Action sr="act6" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Chat Bot</Str>
+			<Int sr="arg1" val="20"/>
+			<Str sr="arg2" ve="3">%wt_message</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">%message</Str>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
 			<code>38</code>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<bool0>Or</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%message</lhs>
+					<op>4</op>
+					<rhs>[Pp]aphus</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%message</lhs>
+					<op>4</op>
+					<rhs>Libre</rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
 	</Task>
 </TaskerData>

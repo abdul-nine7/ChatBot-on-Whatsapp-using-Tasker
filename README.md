@@ -1,42 +1,16 @@
-# ChatBot-on-Whatsapp-using-Tasker
-A chat bot to entertain your friends on WHATSAPP when you are offline....
-Tools needed :
-1. ROOTED ANDROID DEVICE !!
-2. Tasker (android app)
-3. WhatsTasker (A tasker plugin app) (this app is going to need the root access)
-4. Account on Bot-Libre website.. (for application ID)
+# ChatBot on Whatsapp using Tasker
+````Implementing a ChatBot on your own WhatsApp to entertain your friends when you are offline.````
 
-NOW !!
+![Screenshot Chatbot](https://raw.github.com/abdulnine7/ChatBot-on-WhatsApp-in-5-easy-steps/screenshots/0.png?raw=true "Demo chat with the ChatBot")
 
-what you all need to do is...
-1. Import the ChatBot.prf.xml file in Tasker by long pressing Profile tab in that Tasker app...
-2. After importing this check whether the "OnWhatsApp" task is automatically created or not...
-3. If not created import OnWhatsApp.tsk.xml, otherwise leave this file...
-4. Now Import the most important file that is Chat_Bot.tsk.xml.
+**All you Need**
+1. A ROOTED ANDROID DEVICE !!
+2. [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm) (Android app)
+3. [WhatsTasker](https://www.dropbox.com/s/g5fbpm4ly9e7yfg/WhatsTasker.apk?dl=1) Tasker plug-in (This app is going to need the root access)
+4. Account on [Bot-Libre](https://www.botlibre.com/). (for Bot API)
 
-Now your chatbot is made but still not ready to chat with your friends...
+If you have these things then you are all set. Read [Wiki](https://github.com/abdulnine7/ChatBot-on-WhatsApp-in-5-easy-steps/wiki) for the steps to get this working.
 
-So now go to VARS(variables) tab in the Tasker app, you will see four different variables with null value in them, they are,
-1.%AppID
-2.%Bot
-3.%ConvID
-4.%IDignore
+**Author :** [Abdul Noushad Sheikh](https://ww.github.com/abdulnine7)
 
-So now what these variables are suppose to ??
-
-1.%AppID - this variable is the application ID, for which you have made a Bot-Libre account, you will see this in the User-Details of your Bot-Libre account. (this is your personal key dont share it with anyone)
-  
-2.%Bot- this variable is the bot with which you want to chat with, The Bot-Libre website provides the API for many bots they have, so they have given each bot a different Bot ID. This you will find in the Respective Bot's description. If you didnt understood anything about this %Bot then simply assign it the value "165" or "160" 165 corresponds to Einstein Bot and 165 correspond to Brain Bot.
-
-3.%ConvID - this variable is the variable which will hold on your conversation with the bot.This is there so that the bot remember the previous chat and respond accordingly. For this variable after setting %AppID and % Bot, first import the GetConvID.tsk file as a task in Tasker and then run it , it automaticslly sets this variable.  
-
-4.%IDignore - This variable is there to ignore people who are not suppose to receive ChatBots reply. Simply add 10 digit phone numbers of those people seperated by commas.
-
-So now Your Chat Bot is ready to chat with your real friends!!
-
-Note : The ChatBot is not going to reply on WhatsApp groups, I myself make it sure this. Because I already tested on many phones and the WhatsApp app was crashing continously after sending message on group using ths code, (via WhatsTasker) 
-
-So thank you,
-and Enjoy your virtual assistant.
-
-~Abdul
+**Note :** Read [Wiki](https://github.com/abdulnine7/ChatBot-on-WhatsApp-in-5-easy-steps/wiki) to know about how to use this project. Contributions and suggestions are welcomed.

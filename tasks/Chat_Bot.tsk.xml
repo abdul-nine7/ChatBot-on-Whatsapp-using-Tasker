@@ -1,7 +1,7 @@
 <TaskerData sr="" dvi="1" tv="4.7u3m">
 	<Task sr="task71">
 		<cdate>1463150095067</cdate>
-		<edate>1466536047038</edate>
+		<edate>1510482259065</edate>
 		<id>71</id>
 		<nme>Chat Bot</nme>
 		<pri>100</pri>
@@ -57,11 +57,6 @@
 			<Int sr="arg2" val="0"/>
 		</Action>
 		<Action sr="act6" ve="7">
-			<code>548</code>
-			<Str sr="arg0" ve="3">%chatbotrespo21</Str>
-			<Int sr="arg1" val="0"/>
-		</Action>
-		<Action sr="act7" ve="7">
 			<code>126</code>
 			<Str sr="arg0" ve="3">%chatbotrespo21</Str>
 			<Int sr="arg1" val="1"/>
