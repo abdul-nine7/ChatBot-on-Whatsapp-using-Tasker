@@ -1,7 +1,7 @@
 # ChatBot on Whatsapp using Tasker
 ````Implementing a ChatBot on your own WhatsApp to entertain your friends when you are offline.````
 
-![Screenshot Chatbot](https://raw.github.com/abdulnine7/ChatBot-on-WhatsApp-in-5-easy-steps/screenshots/0.png?raw=true "Demo chat with the ChatBot")
+![Screenshot Chatbot](https://www.github.com/abdulnine7/ChatBot-on-WhatsApp-in-5-easy-steps/screenshots/0.png?raw=true "Demo chat with the ChatBot")
 
 **All you Need**
 1. A ROOTED ANDROID DEVICE !!
