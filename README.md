@@ -2,7 +2,6 @@
 ````Implementing a ChatBot on your own WhatsApp to entertain your friends when you are offline.````
 
 ![Screenshot Chatbot](https://github.com/abdulnine7/ChatBot-on-WhatsApp-in-5-easy-steps/blob/master/screenshots/0_small.png?raw=true "Demo chat with the ChatBot")
-![Screenshot Chatbot](https://github.com/abdulnine7/ChatBot-on-WhatsApp-in-5-easy-steps/blob/master/screenshots/1_small.png?raw=true "Demo chat with the ChatBot")
 ![Screenshot Chatbot](https://github.com/abdulnine7/ChatBot-on-WhatsApp-in-5-easy-steps/blob/master/screenshots/3_small.png?raw=true "Demo chat with the ChatBot")
 
 **All you Need**
